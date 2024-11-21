@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background-color: rgb(56, 56, 56);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calendar-section {
+    flex: 4;
+    /* 80% width */
+    padding: 20px;
+}
+
+.clock-section {
+    flex: 1;
+    /* 20% width */
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    border-left: 2px solid #666;
+}
+
+.date {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cal-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-size: 18px;
+}
+
+.day,
+.number,
+.number-pre {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.day {
+    background-color: #4a4a4a;
+    color: #fff;
+    font-size: 16px;
+}
+
+.number {
+    background-color: #6c6c6c;
+    color: #fff;
+}
+
+.number-pre {
+    color: rgba(238, 238, 238, 0.4);
+}
+
+.number.active {
+    background-color: rgb(73, 73, 247);
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+
+.number:hover,
+.number-pre:hover {
+    border: 2px solid grey;
+}
+
+.clock-time {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.clock-text {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.clock {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.clock-image {
+    width: 100%; /* Adjust according to the image size */
+    max-width: 150px; /* Limit the size of the clock image */
+}
+
+.clock-text {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
